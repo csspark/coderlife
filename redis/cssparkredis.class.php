@@ -15,7 +15,6 @@ class CssparkRedis
 {
 	private $redis; 
 	static private $_instance;
-	static $test = 1;
     private $redis_servers = array("*.*.*.*:*", "*.*.*.*:*","*.*.*.*:*");
 	private function __construct(){
     	$this->redis = new RedisCluster(NULL, $this->redis_servers);
